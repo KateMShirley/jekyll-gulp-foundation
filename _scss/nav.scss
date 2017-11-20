@@ -1,0 +1,18 @@
+.navigation{
+  padding: 50px 80px;
+
+}
+.main-name{
+  line-height: 1;
+}
+#menu{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  max-width: 668px;
+}
+
+.nav-link{
+  text-decoration: none;
+  text-transform: lowercase;
+}
