@@ -1,12 +1,7 @@
-@import "reset";
-@import "syntax";
-@import "settings";
+@import "grid";
 
-// @import "base/base";
-@import "typography";
-@import 'foundation';
 
-@include foundation-everything;
+
 
 body {
     background: white;
