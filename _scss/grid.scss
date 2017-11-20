@@ -9,6 +9,9 @@
   border: 3px solid tomato;
   border-radius: 2px;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   @media (min-width: 1000px){
     width: 19%;
   }
@@ -20,4 +23,8 @@
 }
 .project-title{
   font-size: 2rem;
+}
+.project-link{
+  text-decoration: none;
+  color: #A0A0A0;
 }
