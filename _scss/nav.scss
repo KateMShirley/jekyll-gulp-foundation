@@ -5,6 +5,25 @@
 .main-name{
   line-height: 1;
 }
+
+.main{
+  // text-transform: uppercase;
+  font-size: 150px;
+  margin: 10px auto 0;
+  cursor: pointer;
+  position: absolute;
+
+}
+.main-outline{
+  font-family: 'Londrina Outline', cursive;
+  font-size: 150px;
+  z-index: 10;
+}
+
+.main-title{
+   font-family: 'Londrina Solid', cursive;
+  color: #f95b3b;
+}
 #menu{
   display: flex;
   justify-content: space-between;
@@ -15,4 +34,12 @@
 .nav-link{
   text-decoration: none;
   text-transform: lowercase;
+  color: black;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 18px;
+
+  &:hover{
+    font-family: 'Londrina Outline', cursive;
+    color: black;
+  }
 }
