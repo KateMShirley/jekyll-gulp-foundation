@@ -6,8 +6,10 @@ title: Projects
 <section>
         <div class="portfolio-grid">
           {% for post in site.categories.portfolio %}
-            <div class="portfolio-square" style="background-image:url('/img/projects/{{ post.cover-image }}'); background-size: cover; background-position: center; padding:0;">
-              <a href="{{ post.url }}" class="project-link"><h2 class="project-title">{{ post.title }}</h2></a>
+            <div class="portfolio-square">
+              <div class="portfolio-bkg"></div>
+                <a href="{{ post.url }}" class="project-link"><h2 class="project-title">{{ post.title }}</h2></a>
+              <img class="swipe" src="../img/swipe.svg">
           </div>
         {% endfor %}
       </div>

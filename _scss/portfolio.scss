@@ -1,0 +1,51 @@
+.portfolio-grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-bkg{
+  height: 98%;
+  width: 98%;
+  background-color: black;
+  transform: rotate(-2deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -50;
+  transition: all .1s ease-in;
+}
+.portfolio-square{
+  width: 50%;
+  height: 200px;
+  position: relative;
+  margin-bottom: 7px;
+
+  &:hover{
+    cursor: pointer;
+    .portfolio-bkg{
+      transform: rotate(-1deg);
+    }
+  }
+}
+
+.project-link{
+  position: absolute;
+  bottom: 23px;
+  left: 23px;
+  text-decoration: none;
+  color: black;
+}
+
+.project-title{
+  margin: 0;
+}
+
+.swipe{
+  width: 95%;
+  position: absolute;
+  bottom: 15px;
+  z-index: -10;
+  svg{
+    fill: white;
+  }
+}
