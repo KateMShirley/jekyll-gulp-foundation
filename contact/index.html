@@ -2,16 +2,28 @@
 layout: default
 title: Contact
 ---
-<div class="about margin-bottom-large">
-
-    <section>
-        <div class="full-column-full">
-            <div class="about-info" style="background-color:#000;">
-                <div class="half-column">
-                    <h4>Contact</h4>
-                    <h1><a class="white email" href="mailto:kate.m.shirley@gmail.com">kate.m.shirley@gmail.com</a></h1>
-                </div>
+<div class="section contact-section">
+  <form class="contact-form">
+    <div class = "form-group form-group-half">
+              <label for="first-name"><h6>First Name:</h6></label>
+              <input type="text" class ="form-control form" id="first-name">
             </div>
-        </div>
-    </section>
+            <div class = "form-group form-group-half">
+              <label for="last-name"><h6>Last Name:</h6></label>
+              <input type="text" class ="form-control form" id="last-name">
+            </div>
+            <div class = "form-group form-group-half">
+              <label for="email-address"><h6>Email Address: *</h6></label>
+              <input type="text" class ="form-control form" id="email-address">
+            </div>
+            <div class = "form-group form-group-half">
+              <label for="email-address"><h6>Phone Number: </h6></label>
+              <input type="text" class ="form-control form" id="email-address">
+            </div>
+            <div class = "form-group form-group-full">
+              <label for="project-request"><h6>What should we chat about? </h6></label>
+              <input type="textarea" id="project-request" class ="form-control form">
+            </div>
+            <button type="submit" class="btn-submit" id="form_send">Submit</button>
+  </from>
 </div>

@@ -1,9 +1,22 @@
 
 .main{
-  display: flex;
-  flex-direction: column;
+  position:relative;
+  min-height: 100vh;
+  background-color: $color-grey;
 }
+// #barba-wrapper{
+//   width: 100%;
+//   z-index: 500;
+// }
 
-.container-main{
-  padding: 0 80px;
+ .animating{
+  .stripe{
+    display:none;
+    // z-index: 100;
+  }
 }
+//
+// .container-main{
+//   // padding: 0 80px;
+//   width: 70%;
+//

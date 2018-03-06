@@ -1,15 +1,44 @@
 .navigation{
-  padding: 0px 80px;
+  // padding: 85px 30px 0 35px;
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 80%;
+  flex-direction: row;
+  // height: 70px;
+  padding: 20px 40px;
+  width: 100%;
+  position: fixed;
+  z-index: 500;
+  background-color: $color-grey;
+  // flex-direction: column;
+  // height: 100%;
+
+  // grid styling
+  // background-size: 20px 20px;
+  // background-image: -webkit-linear-gradient(left, rgba(0,0,0,.1) 1px, transparent 1px), -webkit-linear-gradient(rgba(0,0,0,.1) 1px, transparent 1px);;
+  // border-right: solid 2px rgba(0,0,0,.1);
+  // flex-direction: column;
+  // height: 100%;
+
 
 }
 .main-name{
-  height: 150px;
   position: relative;
   cursor: pointer;
+  flex: 1;
+
+  a{
+    text-decoration:none;
+    color: $color-forest;
+    text-transform:uppercase;
+  }
+
+}
+
+.main-nav{
+  text-align: right;
+  flex: 2;
+  // position: fixed;
+  // top: 335px;
+  // left: 140px;
 }
 
 // .main{
@@ -20,45 +49,47 @@
 //   font-weight: 300;
 //
 // }
-.main-outline{
-  font-family: 'Londrina Outline', cursive;
-  font-size: 150px;
-  z-index: 10;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  font-weight: 300;
-}
 
 .main-title{
-   font-family: 'Londrina Solid', cursive;
-  color: #f95b3b;
-  font-size: 150px;
   margin: 0;
-  cursor: pointer;
-  position: absolute;
-  top: 2px;
-  left: 2px;
+//    font-family: 'Londrina Solid', cursive;
+//   color: #f95b3b;
+//   font-size: 135px;
+//   margin: 0;
+//   cursor: pointer;
+//   position: absolute;
+//   top: 2px;
+//   left: 2px;
 }
 #menu{
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  // justify-content: space-around;
   list-style-type: none;
-  width: 100%;
-  margin: 50px auto;
+  padding:0;
+  margin: 0;
+  justify-content: flex-end;
+  // width: 100%;
+  // margin: 0px;
+  // padding: 0px;
+  // text-align: right;
+  // position: fixed;
 }
 
 .nav-link{
   text-decoration: none;
   text-transform: lowercase;
-  color: black;
+  color: $color-black;
   font-family: 'Londrina Solid', cursive;
   font-size: 32px;
 
+  &:not(first-child){
+    margin-left: 20px;
+  }
+
   &:hover{
     font-family: 'Londrina Outline', cursive;
-    color: black;
+    color: $color-black;
     // border-bottom: solid 3px rgb(41, 74, 196);
     // border-radius: 40px 15px 225px 15px/15px 225px 15px 255px;
   }

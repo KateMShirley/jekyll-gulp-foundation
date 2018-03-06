@@ -2,15 +2,19 @@
 layout: default
 title: Projects
 ---
+
 <div class="projects">
 <section>
         <div class="portfolio-grid">
           {% for post in site.categories.portfolio %}
+          <div class="portfolio-wrapper">
             <div class="portfolio-square">
-              <div class="portfolio-bkg"></div>
-                <a href="{{ post.url }}" class="project-link"><h2 class="project-title">{{ post.title }}</h2></a>
-              <img class="swipe" src="../img/swipe.svg">
+              <div class="portfolio-bkg">
+                <img src="../img/projects/{{ post.cover-image }}">
+              </div>
           </div>
+          <a href="{{ post.url }}" class="project-link"><h2 class="project-title">{{ post.title }}</h2></a>
+        </div>
         {% endfor %}
       </div>
 </section>

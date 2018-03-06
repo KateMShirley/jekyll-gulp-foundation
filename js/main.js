@@ -21,10 +21,9 @@ $(function() {
             /**
              * this.oldContainer is the HTMLElement of the old Container
              */
-             console.log('barba at work');
 
-            return $(this.oldContainer).animate({
-                opacity: 0
+            return $('.hero-wrapper').animate({
+              opacity: 0
             }).promise();
         },
 
@@ -83,4 +82,10 @@ $(function() {
         event.preventDefault();
         $('#menu').removeClass('open');
     });
+
+    $('.hero-link').on('click', function(e){
+      e.preventDefault();
+      console.log('menu click');
+      $('.main').addClass('animating');
+    })
 });

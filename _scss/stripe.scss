@@ -1,0 +1,24 @@
+.stripe{
+  min-width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index:-10;
+
+  &-one{
+    background-color: $color-black;
+      transform:translateY(-0%);
+  }
+  &-two{
+    background-color: $color-forest;
+      transform:translateY(-40%);
+  }
+  &-three{
+    background-color: $color-green;
+      transform:translateY(-60%);
+  }
+  &-four{
+    background-color: $color-blue;
+    transform:translateY(-90%);
+  }
+}

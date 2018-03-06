@@ -1,15 +1,28 @@
+@import "variables";
 @import "normalize";
 // @import "skeleton";
 @import "nav";
 @import "container";
 @import "portfolio";
+@import "hero";
+@import "stripe";
+@import "form";
 
-
+html {
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 
 body {
-    background: white;
+    background: $color-grey;
     font-size: 16px;
-    background-size: 20px 20px;
-    background-image: linear-gradient(to right, rgba(0,0,0,.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,.1) 1px, transparent 1px);
+    font-family: 'Rubik', sans-serif;
+    color: $color-black;
+    min-height:100vh;
 }

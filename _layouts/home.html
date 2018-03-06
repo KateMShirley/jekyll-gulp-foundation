@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="View the works and read the words of Tyler Bramer, a passionate creative person who is always seeking to push his limits." />
+
+    <!-- Custom CSS -->
+    <link async rel="stylesheet" href="/css/main.css">
+
+    <!-- Fonts -->
+    <!-- <script async src="https://use.typekit.net/zad8oru.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+    <link async href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline|Londrina+Solid|Londrina+Shadow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+
+</head>
+
+<body>
+  <main class="main">
+    <div class="stripe stripe-one"></div>
+    <div class="stripe stripe-two"></div>
+    <div class="stripe stripe-three"></div>
+    <div class="stripe stripe-four"></div>
+
+    <div id="barba-wrapper" class="container-main">
+        <div class="barba-container">
+            {{ content }}
+        </div>
+    </div>
+
+    {% include scripts.html %}
+</main>
+</body>
+
+</html>
